@@ -48,11 +48,11 @@ class Owner
   end 
   
   def walk_dogs 
-    dogs.select{|a| a.mood = "happy"}
+    Dog.all.select{|a| a.mood = "happy"}
   end 
   
   def feed_cats 
-    cats.select{|a| a.mood = "happy"}
+    Cat.select{|a| a.mood = "happy"}
   end 
   
   def sell_pets 
